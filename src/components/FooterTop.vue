@@ -5,7 +5,7 @@
       <div class="container-50">
       <ul>
         <li>
-          <h1>dc comics</h1>
+          <h3>dc comics</h3>
         </li>
         <li>
           <a href="#">Characters</a>
@@ -29,7 +29,7 @@
           <a href="#">News</a>
         </li>
         <li>
-          <h1>shop</h1>
+          <h3>shop</h3>
         </li>
         <li>
           <a href="#">Shop DC</a>
@@ -40,7 +40,7 @@
       </ul>
       <ul>
         <li>
-          <h1>dc</h1>
+          <h3>dc</h3>
         </li>
         <li>
           <a href="#">Terms Of Use</a>
@@ -78,7 +78,7 @@
       </ul>
       <ul>
         <li>
-          <h1>sites</h1>
+          <h3>sites</h3>
         </li>
         <li>
           <a href="#">DC</a>
@@ -97,8 +97,8 @@
         </li>
       </ul>
       </div>
-      <div>
-        <img src="../assets/img/dc-logo-bg.png" alt="Logo footer">
+      <div class="logo">
+        
       </div>
     </div>
   </div>
@@ -107,7 +107,7 @@
 
 <script>
 export default {
-  name:'Footer.vue'
+  name:'FooterTop.vue'
 }
 </script>
 
@@ -123,7 +123,7 @@ export default {
       .container-50{
         display: flex;
         align-items: flex-start;
-        h1{
+        h3{
           text-transform: uppercase;
           color: white;
         }
@@ -134,8 +134,11 @@ export default {
   a{
     color: #7C7566;
   }
-  img{
-    
-    height: 600px;
+  .logo{
+    width: 50%;
+    background-image: url(../assets/img/dc-logo-bg.png);
+    background-repeat:no-repeat;
+    background-size: 600px 600px;
+    background-position: 0 -110px ;
   }
 </style>

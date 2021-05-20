@@ -1,24 +1,30 @@
 <template>
   <div id="app">
     <Header />
-    <Footer />
+    <FooterTop />
+    <FooterBottom />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
+import FooterTop from './components/FooterTop.vue'
+import FooterBottom from './components/FooterBottom.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Footer
+    FooterTop,
+    FooterBottom
   }
 }
 </script>
 
 <style lang="scss">
+  *{
+    font-family: "Greta Sans Medium","Greta Sans Regular",Arial,sans-serif;
+  }
   .container-80{
     width: 80%;
     margin: 0 auto;

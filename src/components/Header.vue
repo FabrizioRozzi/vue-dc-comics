@@ -65,5 +65,9 @@ export default {
 
   }
 
+  img{
+    height: 80px;
+  }
+
 </style> 
 
