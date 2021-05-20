@@ -23,9 +23,20 @@ export default {
     width: 80%;
     margin: 0 auto;
   }
+  .container-50{
+    width: 50%;
+  }
 
   .active{
     color: blue;
     border-bottom: 5px solid blue;
+  }
+
+  li{
+    list-style: none;
+  }
+
+  a{
+    text-decoration: none;
   }
 </style>

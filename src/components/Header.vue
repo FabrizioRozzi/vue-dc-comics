@@ -55,12 +55,10 @@ export default {
     li{
       display: inline;
       padding: 0 10px;
-      list-style: none;
     }
 
     a{
       padding-bottom: 38px;
-      text-decoration: none;
       text-transform: uppercase;
       color: black;
     }
