@@ -1,6 +1,7 @@
 <template>
 <div>
   <div class="container-80">
+    <h3 class="relative">CURRENT SERIES</h3>
     <ProdottoMain
       v-for="(prodotto, index) in prodotti" :key="index"
       :serie="prodotto"
@@ -47,12 +48,21 @@ export default {
     width: 100%;
     background-color: #1C1C1C;
     text-align: center;
+
   }
   .container-80{
+    position: relative;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
+    .relative{
+      position: absolute;
+      left: 0;
+      top: -40px;
+      color: white;
+      background-color: blue;
+      padding: 10px 20px;
+    }    
   }
 
   button{

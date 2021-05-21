@@ -11,7 +11,7 @@ export default {
 
 <style lang="scss" scoped>
   .container-jumbo{
-    height:600px;
+    height:300px;
     width: 100%;
     background-color: gray;
     background-image: url(../assets/img/jumbotron.jpg);

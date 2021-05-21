@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="full">
     <div class="container-80">
       <ul>
         <li
           v-for="(link, index) in links" :key="index"
         >
           <img :src="link.src" :alt="link.text">
-          <h3>{{link.text}}</h3>
+          <h5>{{link.text}}</h5>
         </li>
       </ul>
     </div>
@@ -21,23 +21,23 @@ export default {
     return{
       links:[
         {
-          src:"@/assets/img/buy-comics-digital-comics.png",
+          src:require("@/assets/img/buy-comics-digital-comics.png"),
           text:"DIGITAL COMICS"
         },
         {
-          src:"@/assets/img/buy-comics-merchandise.png",
+          src:require("@/assets/img/buy-comics-merchandise.png"),
           text:"DC MERCHANDISE"
         },
         {
-          src:"@/assets/img/buy-comics-shop-locator.png",
+          src:require("@/assets/img/buy-comics-shop-locator.png"),
           text:"SUBSCRIPTION"
         },
         {
-          src:"@/assets/img/buy-comics-subscriptions.png",
+          src:require("@/assets/img/buy-comics-subscriptions.png"),
           text:"COMIC SHOP LOCATOR"
         },
         {
-          src:"@/assets/img/buy-dc-power-visa.svg",
+          src:require("@/assets/img/buy-dc-power-visa.svg"),
           text:"DC POWER VISA"
         },
       ]
@@ -48,11 +48,25 @@ export default {
 
 <style lang="scss" scoped>
 
-  div{
+  .full{
     width: 100%;
+    height: 200px;
     background-color: blue;
-    .container-80{
-
+    ul{
+      display: flex;
+      justify-content: space-between;
+      padding: 60px;
+      li{
+        display: flex;
+        align-items: center;
+        img{
+          height: 80px;
+          padding-right: 10px;
+        }
+        h5{
+          color: white;
+        }
+      } 
     }
   }
 
